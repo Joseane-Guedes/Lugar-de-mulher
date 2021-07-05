@@ -17,7 +17,7 @@ const useStyles = makeStyles({
   },
   title: {
     fontFamily: 'Roboto',
-   /*  fontWeight: 'bold',  */
+    fontWeight: 'bold', 
     fontSize: '1rem',
     color: '#fff',
   },
@@ -32,12 +32,12 @@ export default function ImageCard({ place, checked }) {
   const classes = useStyles();
 
   return (
-    <Collapse in={checked} {...(checked ? { timeout: 3000 } : {})}>
+    <Collapse in={checked} {...(checked ? { timeout: 2000 } : {})}>
       <Card className={classes.root}>
         <CardMedia
           className={classes.media}
           image={place.imageUrl}
-           title="Contemplative"
+           title={place.title}
         
         />
         <CardContent>
@@ -46,6 +46,7 @@ export default function ImageCard({ place, checked }) {
             variant="h5"
             component="h1"
             className={classes.title}
+
           >
             {place.title}
           </Typography>
@@ -56,9 +57,16 @@ export default function ImageCard({ place, checked }) {
             className={classes.desc}
           >
             {place.description}
-          </Typography>
+          
+            <button>
+            <a href={place.url} target='_blank' rel="noopener noreferrer"> Saiba mais </a>
+            </button>
+          <div>
+          </div>
+           </Typography>
         </CardContent>
       </Card>
     </Collapse>
   );
 }
+

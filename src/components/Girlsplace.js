@@ -23,7 +23,7 @@ export default function () {
   
   return (   
   <div className={classes.root} id="girlsplace">
-      {places.map(place => <ImageCard place={place} key={place.id} checked={checked}/>)}   
+      {places.map(place => <ImageCard place={place} key={place.id}  checked={checked}/>)}   
     </div>
   );
 }
