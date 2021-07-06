@@ -4,14 +4,21 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
-import { Collapse } from '@material-ui/core';
+import { Collapse, CardActionArea } from '@material-ui/core';
 
 const useStyles = makeStyles({
   root: {
     maxWidth: 300,
     background: 'rgba(0,0,0,0.5)',
     margin: '10px',
-  },
+    borderRadius: '10px',
+    width: '100%',
+    objectFit: 'cover',
+    '&:hover':{
+      boxShadow: '-5px -3px 0px 0px rgba(132,90,191,1)',
+      transform: 'scale(1.02)' 
+    },
+},
   media: {
     height: 200,
   },
@@ -26,6 +33,7 @@ const useStyles = makeStyles({
     fontSize: '1.1rem',
     color: '#ddd',
   },
+ 
 });
 
 export default function ImageCard({ place, checked }) {
@@ -33,6 +41,9 @@ export default function ImageCard({ place, checked }) {
 
   return (
     <Collapse in={checked} {...(checked ? { timeout: 2000 } : {})}>
+    <CardActionArea
+      onClick={(e) => window.open(place.url)}
+    >
       <Card className={classes.root}>
         <CardMedia
           className={classes.media}
@@ -58,14 +69,15 @@ export default function ImageCard({ place, checked }) {
           >
             {place.description}
           
-            <button>
+        {/*     <button>
             <a href={place.url} target='_blank' rel="noopener noreferrer"> Saiba mais </a>
-            </button>
+            </button> */}
           <div>
           </div>
            </Typography>
         </CardContent>
       </Card>
+      </CardActionArea>
     </Collapse>
   );
 }

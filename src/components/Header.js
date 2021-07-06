@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { AppBar, IconButton, Toolbar, Collapse } from "@material-ui/core";
+
+import { AppBar, IconButton, Toolbar, Collapse, Button } from "@material-ui/core";
 import ArrowDropDownCircleIcon from "@material-ui/icons/ArrowDropDownCircle";
 import { Link as Scroll } from "react-scroll";
 
@@ -13,7 +14,9 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Roboto",
   },
   appbar: {
-    background: "none",
+  background: "none",
+  /* backgroundColor:'#845abf', */
+    
   },
   appbarWrapper: {
     width: "80%",
@@ -22,12 +25,9 @@ const useStyles = makeStyles((theme) => ({
   appbarTitle: {
     flexGrow: "1",
   },
-  icon: {
-    color: "#E12DFF",
-    fontSize: "3rem",
-  },
+
   colorText: {
-    color: "#E12DFF",
+    color: "#845abf",
   },
   container: {
     textAlign: "center",
@@ -41,19 +41,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "3rem",
   },
 
-  nav: {
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    marginLeft: "5rem",
-    marginRight: "5rem",
-    padding: "0",
-    paddingTop: "1.5rem",
-    color: "#4a575d",
-    fontSize: "1rem",
-    listStyleType: "none",
-   
-  },
+
   
 }));
 export default function Header() {
@@ -65,22 +53,13 @@ export default function Header() {
   return (
     <div className={classes.root} id="header">
       <AppBar className={classes.appbar} elevation={0}>
-   <nav>
-    <ul className={classes.nav}>
-    <li><a href="https://www.youtube.com/watch?v=fPgkhbs3AnE" target='_blank' rel="noopener noreferrer"> <span className={classes.colorText}>Projeto Lugar de mulher.</span></a></li>
-    <li><a href="https://github.com/Joseane-Guedes" target='_blank' rel="noopener noreferrer"><span className={classes.colorText}>Autora</span></a></li>
-    <li><a href="mailto:joseane_23@hotmail.com" target='_blank' rel="noopener noreferrer"><span className={classes.colorText}>Contato</span></a></li>  
-    <li><a href="https://reprograma.com.br/" target='_blank' rel="noopener noreferrer"><span className={classes.colorText}>Reprograma</span></a></li> 
-</ul>
-</nav>
-
-
-        <Toolbar className={classes.appbarWrapper}>
-         
-
+        <Toolbar className={classes.appbar}>
+          <Button color="inherit" onClick={() => window.open('https://www.youtube.com/watch?v=fPgkhbs3AnE')}>Projeto Lugar de Mulher</Button>
+          <Button color="inherit" onClick={() => window.open('https://github.com/Joseane-Guedes')}>Autora</Button>
+          <Button color="inherit" onClick={() => window.open('https://www.linkedin.com/in/joseane-guedes/')}>Contato</Button>
+          <Button color="inherit" onClick={() => window.open('https://reprograma.com.br/')}>Reprograma</Button>
         </Toolbar>
       </AppBar>
-
       <Collapse
         in={checked}
         {...(checked ? { timeout: 2000 } : {})}
@@ -90,7 +69,7 @@ export default function Header() {
           <h1 className={classes.title}>
             Lugar de Mulher <br />
             <img
-              src="https://readme-typing-svg.herokuapp.com?color=E12DFF&size=37&vCenter=true&lines=%C3%A9+onde+ela+quiser_"
+              src="https://readme-typing-svg.herokuapp.com?color=845abf&size=37&vCenter=true&lines=%C3%A9+onde+ela+quiser_"
               alt="Foto de mulheres em tecnologia"
             />
           </h1>
@@ -103,6 +82,5 @@ export default function Header() {
         </div>
       </Collapse>
     </div>
-    
   );
 }

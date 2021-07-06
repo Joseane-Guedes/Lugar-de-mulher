@@ -6,7 +6,9 @@ const Footer = () => {
     <>
       <footer className="footer">
         <div>
-          <p>Feito com 🤍 por Joseane Guedes 🧑‍💻</p>
+          <p>
+            Feito com <span>🤍</span> por Joseane Guedes 🧑‍💻
+          </p>
           <p> Aluna Reprograma! Em transição de carreira!</p>
           <p>Vamos reprogramar o mundo </p>
           <p> Redes Sociais </p>
@@ -16,7 +18,8 @@ const Footer = () => {
           <a
             className="link_insta"
             href="https://www.instagram.com/josie_codes/"
-            target='_blank' rel="noopener noreferrer"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <img
               className="logo_insta"
@@ -28,7 +31,8 @@ const Footer = () => {
           <a
             className="link_insta"
             href="https://www.linkedin.com/in/joseane-guedes/"
-            target='_blank' rel="noopener noreferrer"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             {" "}
             <img
@@ -37,11 +41,9 @@ const Footer = () => {
               alt="logo linkedin"
             />
           </a>
-          
         </div>
       </footer>
     </>
   );
 };
 export default Footer;
-

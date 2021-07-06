@@ -1,47 +1,44 @@
-*{
+* {
   margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #f4f8ff;
-    background-color:transparent;
-    width: 100%;
-    height: 100px;
-    margin-top: auto;
-    text-align: center;
-    padding: 6rem;
-    font-size: 15px;
-    justify-content: space-around;
-    
-  }
-  
-  
-  .logo_insta {
-    height: 30px;
-    width: 30px;
-  }
-  
-  .logo_linke {
-    height: 30px;
-    width: 30px;
-  }
-  
-  
-  .redes-sociais {
-    align-items: center;
-    margin-top: 10px;
-    color: white;
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(15deg) brightness(103%)
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #f4f8ff;
+  background-color: transparent;
+  width: 100%;
+  height: 100px;
+  margin-top: auto;
+  text-align: center;
+  padding: 6rem;
+  font-size: 15px;
+  justify-content: space-around;
+}
+
+.logo_insta {
+  height: 30px;
+  width: 30px;
+}
+
+.logo_linke {
+  height: 30px;
+  width: 30px;
+}
+
+.redes-sociais {
+  align-items: center;
+  margin-top: 10px;
+  color: white;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(15deg) brightness(103%)
     contrast(102%);
-    display: inline-flex;
-    flex-wrap: wrap;
-    width: calc(6% + 12px);
-    justify-content: space-between;
-  }
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: calc(6% + 12px);
+  justify-content: space-between;
+}
