@@ -22,18 +22,18 @@ Tentar definir as mulheres é correr o risco de limitá-las provocando uma grand
 ![Screenshot](https://cdn.jsdelivr.net/gh/facebook/create-react-app@27b42ac7efa018f2541153ab30d63180f5fa39e0/screencast.svg)
 
 ### Fontes :books: 
-* [ReactJS]('https://pt-br.reactjs.org/')
-* [Material-UI]('https://material-ui.com/pt/')
-* [Quero ser dev]('https://queroserdev.com/#')
-* [Que documentação?]('https://quedocs.netlify.app/')
-* [Rocketseat]('https://github.com/Rocketseat')
-* [Reprograma]('https://github.com/reprograma')
-* [MDN Web Docs]('https://developer.mozilla.org/pt-BR/')
-* [W3Schools]('https://www.w3schools.com/')
-* [Yarn]('https://yarnpkg.com/package/create-react-app')
+* [ReactJS](https://pt-br.reactjs.org/)
+* [Material-UI](https://material-ui.com/pt/)
+* [Quero ser dev](https://queroserdev.com/#)
+* [Que documentação?](https://quedocs.netlify.app/)
+* [Rocketseat](https://github.com/Rocketseat)
+* [Reprograma](https://github.com/reprograma)
+* [MDN Web Docs](https://developer.mozilla.org/pt-BR/)
+* [W3Schools](https://www.w3schools.com/)
+* [Yarn](https://yarnpkg.com/package/create-react-app)
 
 ### Deploy :star2:
- [Projeto Lugar de Mulher]('https://pt-br.reactjs.org/')
+ [Projeto Lugar de Mulher](https://projeto-lugar-de-mulher.netlify.app/)
 
  <hr/>
 
