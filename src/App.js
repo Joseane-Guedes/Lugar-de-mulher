@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    diplay: 'table-cell',
     minHeight: '100vh',
     backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/banner.jpg'})`,
     backgroundRepeat: 'no-repeat',

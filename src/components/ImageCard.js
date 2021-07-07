@@ -40,7 +40,7 @@ export default function ImageCard({ place, checked }) {
   const classes = useStyles();
 
   return (
-    <Collapse in={checked} {...(checked ? { timeout: 2000 } : {})}>
+    <Collapse in={checked} {...(checked ? { timeout: 3000 } : {})}>
     <CardActionArea
       onClick={(e) => window.open(place.url)}
     >

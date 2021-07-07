@@ -58,15 +58,15 @@ export default function Header() {
     <div className={classes.root} id="header">
       <AppBar className={classes.appbar} elevation={0}>
         <Toolbar className={classes.appbar}>
-          <Button color="inherit" onClick={() => window.open('https://www.youtube.com/watch?v=fPgkhbs3AnE')}>Projeto Lugar de Mulher</Button>
+          <Button color="inherit" onClick={() => window.open('https://www.youtube.com/watch?v=fPgkhbs3AnE')}>Lugar de Mulher</Button>
           <Button color="inherit" onClick={() => window.open('https://github.com/Joseane-Guedes')}>Autora</Button>
-          <Button color="inherit" onClick={() => window.open('https://www.linkedin.com/in/joseane-guedes/')}>Contato</Button>
+          <Button color="inherit" onClick={() => window.open('https://www.instagram.com/josie_codes/')}>Contato</Button>
           <Button color="inherit" onClick={() => window.open('https://reprograma.com.br/')}>Reprograma</Button>
         </Toolbar>
       </AppBar>
       <Collapse
         in={checked}
-        {...(checked ? { timeout: 2000 } : {})}
+        {...(checked ? { timeout: 3000 } : {})}
         collapsedHeight={50}
       >
         <div className={classes.container}>
@@ -74,7 +74,7 @@ export default function Header() {
             Lugar de Mulher <br />
             <img
               src="https://readme-typing-svg.herokuapp.com?color=845abf&size=37&vCenter=true&lines=%C3%A9+onde+ela+quiser_"
-              alt="Foto de mulheres em tecnologia"
+              alt="Heroku Readme Typing SVG"
             />
           </h1>
           
@@ -83,6 +83,7 @@ export default function Header() {
               <ArrowDropDownCircleIcon className={classes.goDown} />
             </IconButton>
           </Scroll>
+
         </div>
       </Collapse>
     </div>
