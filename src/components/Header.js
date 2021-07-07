@@ -12,10 +12,14 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     height: "100vh",
     fontFamily: "Roboto",
+
   },
   appbar: {
   background: "none",
-  /* backgroundColor:'#845abf', */
+  backgroundColor:'#C7D2FE66',
+  backgroundSize:"10px",
+  color: "#845abf",
+ /*  backdropFilter: "blur(1px)", */
     
   },
   appbarWrapper: {
