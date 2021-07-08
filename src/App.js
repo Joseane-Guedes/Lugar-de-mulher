@@ -5,7 +5,6 @@ import Header from './components/Header';
 import Girlsplace from './components/Girlsplace';
 import Footer from './components/Footer';
 
-
 const useStyles = makeStyles((theme) => ({
   root: {
     diplay: 'table-cell',

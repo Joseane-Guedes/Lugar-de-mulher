@@ -88,7 +88,7 @@ export default function Header() {
           <Button className={classes.tabButton}
             color="inherit"
             onClick={() =>
-              window.open("https://www.instagram.com/josie_codes/")
+              window.open("https://github.com/Joseane-Guedes")
             }
           >
             Autora
