@@ -1,6 +1,6 @@
 # [{Reprograma}](https://reprograma.com.br/) - Projeto Final   :tada:
 
-## Projeto Lugar de Mulher  :girl:
+## Lugar de Mulher  :girl:
 
 A inspiração para o projeto final de livre escolha da turma 10 de front-end da Reprograma surgiu como uma maneira de fortalecer a luta feminina. Que mais mulheres consigam se posicionar como merecem na sociedade e sejam cada vez mais vistas, ouvidas e celebradas.
 <br>
@@ -11,8 +11,9 @@ Tentar definir as mulheres é correr o risco de limitá-las provocando uma grand
 * HTML5
 * CSS3
 * JavaScript
-* ReactJS && React Router
-* Material - UI
+* ReactJS 
+* Npm
+* Material - UI 
 
 ## Instalações :link:
 * [Node.js](https://nodejs.org/en/download/)
@@ -33,7 +34,7 @@ Tentar definir as mulheres é correr o risco de limitá-las provocando uma grand
 * [Yarn](https://yarnpkg.com/package/create-react-app)
 
 ### Deploy :star2:
- [Projeto Lugar de Mulher](https://projeto-lugar-de-mulher.netlify.app/)
+ [Lugar de Mulher](https://lugar-de-mulher.netlify.app/)
 
  <hr/>
 
