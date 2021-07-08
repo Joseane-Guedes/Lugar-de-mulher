@@ -17,7 +17,7 @@ Tentar definir as mulheres é correr o risco de limitá-las provocando uma grand
 ## Instalações :link:
 * [Node.js](https://nodejs.org/en/download/)
 * [Yarn](https://yarnpkg.com/)
-* [Npm](https://www.npmjs.com//)
+
 
 ### Passos para criar seu projeto em reactjs:feet:
 ![Screenshot](https://cdn.jsdelivr.net/gh/facebook/create-react-app@27b42ac7efa018f2541153ab30d63180f5fa39e0/screencast.svg)
