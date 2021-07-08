@@ -40,7 +40,7 @@ export default function ImageCard({ place, checked }) {
   const classes = useStyles();
 
   return (
-    <Collapse in={checked} {...(checked ? { timeout: 3000 } : {})}>
+    <Collapse in={checked} {...(checked ? { timeout: 2000 } : {})}>
     <CardActionArea
       onClick={(e) => window.open(place.url)}
     >
@@ -68,10 +68,9 @@ export default function ImageCard({ place, checked }) {
             className={classes.desc}
           >
             {place.description}
-          
-        {/*     <button>
+         {/* <button>
             <a href={place.url} target='_blank' rel="noopener noreferrer"> Saiba mais </a>
-            </button> */}
+            </button>  */}
           <div>
           </div>
            </Typography>

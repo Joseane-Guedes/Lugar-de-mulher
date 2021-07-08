@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
-
-import { AppBar, IconButton, Toolbar, Collapse, Button } from "@material-ui/core";
+import {AppBar, IconButton,Toolbar,Collapse,Button,} from "@material-ui/core";
 import ArrowDropDownCircleIcon from "@material-ui/icons/ArrowDropDownCircle";
 import { Link as Scroll } from "react-scroll";
 
@@ -12,15 +11,13 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     height: "100vh",
     fontFamily: "Roboto",
-
   },
   appbar: {
-  background: "none",
-  backgroundColor:'#C7D2FE66',
-  backgroundSize:"10px",
-  color: "#845abf",
- /*  backdropFilter: "blur(1px)", */
-    
+    background: "none",
+    backgroundColor: "#C7D2FE66",
+    backgroundSize: "10px",
+    color: "#845abf",
+    /*  backdropFilter: "blur(1px)", */
   },
   appbarWrapper: {
     width: "80%",
@@ -42,12 +39,26 @@ const useStyles = makeStyles((theme) => ({
   },
   goDown: {
     color: "#FFF",
-    fontSize: "3rem",
+    fontSize: "3.0rem",
   },
-
-
-  
+  [theme.breakpoints.down("460")]: {
+    fontSize: "2rem",
+  },
+  titleImg: {
+    [theme.breakpoints.down("460")]: {
+      width: "70%",
+    },
+  },
+  tabButton: {
+    [theme.breakpoints.down("460")]: {
+      fontSize: "0.75rem"
+    },
+    [theme.breakpoints.down("420")]: {
+      fontSize: "0.625rem"
+    }
+  }
 }));
+
 export default function Header() {
   const classes = useStyles();
   const [checked, setChecked] = useState(false);
@@ -58,10 +69,36 @@ export default function Header() {
     <div className={classes.root} id="header">
       <AppBar className={classes.appbar} elevation={0}>
         <Toolbar className={classes.appbar}>
-          <Button color="inherit" onClick={() => window.open('https://www.youtube.com/watch?v=fPgkhbs3AnE')}>Lugar de Mulher</Button>
-          <Button color="inherit" onClick={() => window.open('https://github.com/Joseane-Guedes')}>Autora</Button>
-          <Button color="inherit" onClick={() => window.open('https://www.instagram.com/josie_codes/')}>Contato</Button>
-          <Button color="inherit" onClick={() => window.open('https://reprograma.com.br/')}>Reprograma</Button>
+          <Button className={classes.tabButton}
+            color="inherit"
+            onClick={() =>
+              window.open("https://www.youtube.com/watch?v=fPgkhbs3AnE")
+            }
+          >
+            Lugar de Mulher
+          </Button>
+          <Button className={classes.tabButton}
+            color="inherit"
+            onClick={() =>
+              window.open("https://github.com/Joseane-Guedes/Lugar-de-mulher")
+            }
+          >
+            Sobre
+          </Button>
+          <Button className={classes.tabButton}
+            color="inherit"
+            onClick={() =>
+              window.open("https://www.instagram.com/josie_codes/")
+            }
+          >
+            Autora
+          </Button>
+          <Button className={classes.tabButton}
+            color="inherit"
+            onClick={() => window.open("https://reprograma.com.br/")}
+          >
+            Reprograma
+          </Button>
         </Toolbar>
       </AppBar>
       <Collapse
@@ -72,18 +109,17 @@ export default function Header() {
         <div className={classes.container}>
           <h1 className={classes.title}>
             Lugar de Mulher <br />
-            <img
+            <img className={classes.titleImg}
               src="https://readme-typing-svg.herokuapp.com?color=845abf&size=37&vCenter=true&lines=%C3%A9+onde+ela+quiser_"
               alt="Heroku Readme Typing SVG"
             />
           </h1>
-          
+
           <Scroll to="girlsplace" smooth={true}>
             <IconButton>
               <ArrowDropDownCircleIcon className={classes.goDown} />
             </IconButton>
           </Scroll>
-
         </div>
       </Collapse>
     </div>

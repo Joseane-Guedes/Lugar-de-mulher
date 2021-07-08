@@ -23,8 +23,7 @@ export default function App() {
       <CssBaseline />
       <Header />
       <Girlsplace />
-      <Footer />
-      
+      <Footer />  
     </div>
   );
 }
