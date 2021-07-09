@@ -14,7 +14,8 @@ Tentar definir as mulheres é correr o risco de limitá-las provocando uma grand
 * ReactJS 
 * Material - UI 
 
-## Instalações :link:
+## Configuração do ambiente de desenvolvimento :link:
+* [Visual Studio Code](https://code.visualstudio.com/)
 * [Node.js](https://nodejs.org/en/download/)
 * [Yarn](https://yarnpkg.com/)
 
@@ -32,6 +33,10 @@ Tentar definir as mulheres é correr o risco de limitá-las provocando uma grand
 * [MDN Web Docs](https://developer.mozilla.org/pt-BR/)
 * [W3Schools](https://www.w3schools.com/)
 * [Yarn](https://yarnpkg.com/package/create-react-app)
+* [Daily Web Coding](https://www.youtube.com/c/DailyWebCoding)
+
+
+
 
 ### Deploy :star2:
  [Lugar de Mulher](https://lugar-de-mulher.netlify.app/)
