@@ -9,7 +9,7 @@ const Footer = () => {
           <p>
             Feito com <span>🤍</span> por Joseane Guedes 🧑‍💻
           </p>
-       {/*    <p> Aluna Reprograma! Em transição de carreira!</p> */}
+          <p> Aluna Reprograma! Em transição de carreira!</p>
           <p>Vamos reprogramar o mundo </p>
           <p> Redes Sociais </p>
         </div>
